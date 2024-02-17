@@ -1,0 +1,67 @@
+html, body{
+  margin:0;
+}
+.header{
+    
+    display: flex;
+    height: 14vh;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+  }
+  .header-logo{
+    
+    margin: 20px;
+    padding: 20px;
+    
+  }
+  .header-logo > img {
+    width: 200px; 
+  }
+  .header-nav{
+    
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .header-nav-ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+
+  }
+  
+  .header-nav-ul a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff; /* Set the desired color for the navigation links */
+  }
+  
+  .header-center {
+    text-align: center;
+    /* Add styles for the centered elements */
+  }
+  .header-nav-auth{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+  }
+  .header-nav-auth-in{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    
+    border-radius: 10px;
+    border: 1px solid rgb(133, 77, 255);
+  }
+  .header-nav-auth-in a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(133, 77, 255);
+  }

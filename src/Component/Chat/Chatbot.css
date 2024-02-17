@@ -1,0 +1,84 @@
+/* Chatbot.css */
+
+.chatbot-container {
+  width: 450px;
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatbot-header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+
+.chatbot-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.user {
+  background-color: #ecf0f1;
+  text-align: right;
+  margin-left: 50px;
+}
+
+.bot {
+  background-color: #3498db;
+  color: #fff;
+  margin-right: 50px;
+}
+
+.chatbot-input {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.chatbot-input-in {
+  flex: 1;
+  padding: 12px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.chatbot-but {
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+  
+  
+  .chatbot-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Adjust the z-index to make sure it appears over other elements */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+  }
