@@ -12,35 +12,54 @@ const Chat = () => {
   const [query, setQuery] = useState('');
   const [wordCount, setWordCount] = useState(100); // Default word count
   const [showResults, setShowResults] = useState(false);
-  const [searchResults, setSearchResults] = useState(null); // New state to store search results
+  const [searchResults, setSearchResults] = useState(null);
+
+  // Define the function to handle word count change
+  const handleWordCountChange = (newWordCount) => {
+    setWordCount(newWordCount);
+  };
 
   const handleSearch = async () => {
-    try {
-      // Simulating API call
-      const response = await fetch('http://192.168.85.110:8000/api/summary', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          query,
-          length: 100,
-        }),
-      });
+    // try {
+    //   // Simulating API call
+    //   const response = await fetch('http://192.168.136.130:8000/api/summary', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify({
+    //       query,
+    //       length: 800,
+    //     }),
+    //   });
 
-      if (!response.ok) {
-        throw new Error('Failed to fetch results');
-      }
-
-      const results = await response.json();
-      console.log('Results:', results);
+    //   if (!response.ok) {
+    //     throw new Error('Failed to fetch results');
+    //   }
+      const testResponse = [
+        "US stocks traded mixed at the open Thursday, with the GDP data showing a strong 4.9% growth in the third quarter and Nasdaq 100 index declining due to Meta Platforms' latest earnings. However, Treasury yields remained unchanged. This news may suggest more tightening from the Federal Reserve, but the lagged impact of rate hikes and other factors might lead to a restrictive backdrop in Q4. The IRMA trial is a four-arm parallel-group, double-blinded, placebo-controlled, triple-dummy, individually randomised trial in Southern Malawi. The study aims to compare the effectiveness and safety of iron supplements or MNPs (containing iron) given with malaria chemoprevention to malaria chemoprevention alone or placebo on child cognitive development. It also evaluates the effects of iron interventions on anaemia, iron deficiency, and infection risk in children. The trial, set in a rural area with high rates of anaemia and malaria, aims to provide evidence for the functional benefits of iron supplementation in children.",
+        [
+          {
+            "category": "Bitcoin",
+            "link": "https://markets.businessinsider.com/news/stocks/stock-market-news-today-indexes-nasdaq-gdp-outlook-fed-recession-2023-10",
+            "headline": "US stocks trade mixed as traders assess strongest GDP growth since 2021"
+          },
+          {
+            "category": "United States",
+            "link": "https://abcnews.go.com/US/wireStory/economic-spotlight-turns-us-jobs-data-markets-roiled-103774160",
+            "headline": "Economic spotlight turns to US jobs data as markets are roiled by high rates"
+          }
+        ]
+      ];
+      // const results = await response.json();
+      // console.log('Results:', results);
       // Update state to show results and handle the results as needed
       setShowResults(true);
-      setSearchResults(results); // Store search results in state
-    } catch (error) {
-      console.error('Error fetching results:', error.message);
-      // Handle errors, show a message to the user, etc.
-    }
+      setSearchResults(testResponse); // Store search results in state
+    // } catch (error) {
+    //   console.error('Error fetching results:', error.message);
+    //   // Handle errors, show a message to the user, etc.
+    // }
   };
 
   return (
@@ -62,7 +81,7 @@ const Chat = () => {
             </div>
               <div className='response'>
               {showResults && (
-              <div className="search-results">
+              <div className="search-results" id='scrollbar2'>
                 {searchResults ? (
                   <div className='show-sum'>
                     <h3>Summary:</h3>
@@ -101,7 +120,7 @@ const Chat = () => {
       <div className='sidebar'>
         
         <div className='filter'>
-          <WordCount setWordCount={setWordCount} />
+        <WordCount onWordCountChange={handleWordCountChange} />
         </div>
         { showResults &&
           <div className='side-bot'>

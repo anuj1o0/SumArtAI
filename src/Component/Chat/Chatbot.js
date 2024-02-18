@@ -23,7 +23,7 @@ const Chatbot = () => {
 
       try {
         // Simulate API call (replace with your actual API endpoint)
-        const response = await fetch('http://192.168.85.110:8000/api/chat', {
+        const response = await fetch('http://192.168.136.130:8000/api/chat', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
