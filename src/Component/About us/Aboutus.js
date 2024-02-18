@@ -29,7 +29,7 @@ const About = ()=>{
                 </div>
                 <div className='about-member'>
                     <div className='title-short'>
-                        <p>Shorya Gupta and Siddharth Mantri, the creative powerhouses behind Distem Studios, combine their expertise in 3D CGI and design to bring your brand to life with innovative visuals and captivating storytelling.</p>
+                        {/* <p>Shorya Gupta and Siddharth Mantri, the creative powerhouses behind Distem Studios, combine their expertise in 3D CGI and design to bring your brand to life with innovative visuals and captivating storytelling.</p> */}
                     </div>
                 </div>
             </div>

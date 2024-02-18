@@ -95,6 +95,12 @@
     /* overflow-y: scroll;
     scroll-behavior: smooth; */
   }
+  .loading-spinner{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   .search-results {
     margin-top: 20px;
@@ -105,6 +111,7 @@
     height: 55vh;
     padding: 15px;
     border: 1px solid rgb(221, 212, 212);
+    overflow: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
    
