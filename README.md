@@ -1,45 +1,42 @@
-###News Summary Website
-##This project was bootstrapped with Create React App.
+# Sumartai: News Article Summarization
 
-##Features
-#User-Friendly Interface: Navigate through the latest news with an easy-to-use interface.
-#Real-Time Updates: Get the most recent news articles summarized in real-time.
-#Category Filter: Filter news articles by categories such as Technology, Sports, Business, and more.
-#Search Functionality: Search for specific news articles using keywords.
-#Responsive Design: Access the website on any device, be it a desktop, tablet, or mobile.
-#Available Scripts
-#In the project directory, you can run:
+Sumartai is a React-based web application that leverages natural language processing (NLP) techniques to summarize news articles. Users can input an article URL or paste the article text, and Sumartai will generate a concise summary.
 
-`npm start`
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in your browser.
+## Features
 
-The page will reload when you make changes.
-You may also see any lint errors in the console.
+- **Article Summarization:** Summarize lengthy news articles into shorter, more digestible content.
+- **User-Friendly Interface:** Intuitive UI for inputting article URLs or text.
+- **NLP Algorithms:** Utilizes NLP libraries (e.g., spaCy, NLTK) to extract key information.
+- **Responsive Design:** Works seamlessly on desktop and mobile devices.
 
-`npm test`
-Launches the test runner in the interactive watch mode.
-See the section about running tests for more information.
+## Getting Started
 
-`npm run build`
-Builds the app for production to the build folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone this repository:
+git clone https://github.com/your-username/sumartai.git
 
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
 
-See the section about deployment for more information.
+2. Install dependencies:
 
-`npm run eject`
-Note: this is a one-way operation. Once you eject, you can't go back!
+cd sumartai npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc.) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Run the development server:
 
-You don't have to ever use eject. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However, we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm start
 
-Learn More
-You can learn more in the Create React App documentation.
 
-To learn React, check out the React documentation.
+4. Open your browser and navigate to `http://localhost:3000`.
+
+## Usage
+
+1. Enter the article URL or paste the article text.
+2. Click the "Summarize" button.
+3. View the summarized content.
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
