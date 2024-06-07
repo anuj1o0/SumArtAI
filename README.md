@@ -12,7 +12,7 @@ Sumartai is a React-based web application that leverages natural language proces
 ## Getting Started
 
 1. Clone this repository:
-git clone https://github.com/your-username/sumartai.git
+git clone https://github.com/anuj1o0/SumArtAI.git
 
 
 2. Install dependencies:
